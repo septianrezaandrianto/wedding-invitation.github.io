@@ -19,8 +19,7 @@
 <script>
 	console.log("test123")
 	function PlayMusic() {
-		var play=document.getElementById("music");
-		play.play();
+		document.getElementById("music").play();
 	}
 </script>
 
@@ -28,7 +27,7 @@
 <body>
 
 <audio controls loop autoplay id="music" style="display:none">
-	<source src="music/ily.mp3" type="audio/mpeg">
+	<source src="music/ily.mp3" type="audio/mp3">
 	Your browser unsupported!!!
 </audio>
 	
