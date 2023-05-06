@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-  <meta charset="utf-8">
-  <title>W & P Wedding Invitation</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <!-- font awesome css -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <!-- main css -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- responsive css -->
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <!-- theme setting css -->
-  <link rel="stylesheet" type="text/css" href="css/setting.css">
-  <!-- default skin -->
-  <link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
+<meta charset="utf-8">
+<title>W & P Wedding Invitation</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- font awesome css -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<!-- main css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- responsive css -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!-- theme setting css -->
+<link rel="stylesheet" type="text/css" href="css/setting.css">
+<!-- default skin -->
+<link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
+
+<!-- for autoplay audio -->
+<script>
+	function PlayMusic() {
+		var play=document.getElementById("music");
+		play.play();
+	}
+
+	$(document).ready(function(){
+		setTimeout(PlayMusic,3000);
+	})
+</script>
+
 </head>
 <body>
 
-<iframe src="music/ily.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
-
+<audio controls loop autoplay id="music" style="display:none">
+	<source src="music/ily.mp3" type="audio/mpeg">
+	Your browser unsupported!!!
+</audio>
+	
 
 <!-- preloader start -->
 <div class="preloader">
@@ -54,7 +70,7 @@
 </header>
 <!-- header end -->
 
-<!-- home section start -->
+	<!-- home section start -->
 <section class="home-section" data-scroll-index="0">
 	<!-- slide start -->
 	<div class="slide active" style="background-image: url('img/slides/slide-1.jpg');">
